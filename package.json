@@ -1,5 +1,10 @@
 {
   "name": "insta-vue",
+  "author": {
+    "name": "Saulo Vinícius Oliveira Arantes",
+    "email": "saulovinicius987@gmail.com",
+    "url": "https://github.com/saulo-arantes"
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {
