@@ -1,131 +1,47 @@
 <template>
   <div class="header">
     <div class="header-items">
-      <div class="logo">
+      <div class="camera">
         <a href="/">
           <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
-            viewBox="0 0 24 24"
+            fill="#262626"
+            height="24"
+            viewBox="0 0 48 48"
+            width="24"
           >
             <path
-              fill="none"
-              d="M0 0h24v24H0V0z"
+              clip-rule="evenodd"
+              d="M38.5 46h-29c-5 0-9-4-9-9V17c0-5 4-9 9-9h1.1c1.1 0 2.2-.6 2.7-1.7l.5-1c1-2 3.1-3.3 5.4-3.3h9.6c2.3 0 4.4 1.3 5.4 3.3l.5 1c.5 1 1.5 1.7 2.7 1.7h1.1c5 0 9 4 9 9v20c0 5-4 9-9 9zm6-29c0-3.3-2.7-6-6-6h-1.1C35.1 11 33 9.7 32 7.7l-.5-1C31 5.6 29.9 5 28.8 5h-9.6c-1.1 0-2.2.6-2.7 1.7l-.5 1c-1 2-3.1 3.3-5.4 3.3H9.5c-3.3 0-6 2.7-6 6v20c0 3.3 2.7 6 6 6h29c3.3 0 6-2.7 6-6V17zM24 38c-6.4 0-11.5-5.1-11.5-11.5S17.6 15 24 15s11.5 5.1 11.5 11.5S30.4 38 24 38zm0-20c-4.7 0-8.5 3.8-8.5 8.5S19.3 35 24 35s8.5-3.8 8.5-8.5S28.7 18 24 18z"
+              fill-rule="evenodd"
             />
-            <path d="M18 4H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-1 14H7c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h10c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1z" />
           </svg>
         </a>
       </div>
-      <div
-        class="search-bar"
-        @click="toggleSearch"
-      >
-        <form
-          action=""
-          class="search-form"
+
+      <div class="logo">
+        <img
+          src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+          alt="Instagram logo"
         >
-          <div class="form-group">
-            <div
-              ref="searchLabel"
-              class="search-icon"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="none"
-                  d="M0 0h24v24H0V0z"
-                />
-                <path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
-              </svg>
-              <span
-                ref="placeholder"
-                class="placeholder"
-              >
-                Buscar
-              </span>
-            </div>
-            <input
-              ref="searchInput"
-              type="text"
-              class="search-input"
-              @blur="blurSearch"
-            >
-            <div
-              ref="searchClear"
-              class="search-clear"
-              @click="clearSearch"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  opacity=".21"
-                  fill="none"
-                  d="M0 0h24v24H0V0z"
-                />
-                <path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm4.3 14.3c-.39.39-1.02.39-1.41 0L12 13.41 9.11 16.3c-.39.39-1.02.39-1.41 0-.39-.39-.39-1.02 0-1.41L10.59 12 7.7 9.11c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0L12 10.59l2.89-2.89c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41L13.41 12l2.89 2.89c.38.38.38 1.02 0 1.41z" />
-              </svg>
-            </div>
-          </div>
-        </form>
       </div>
-      <div class="group-icons">
-        <div class="explore">
-          <a href="/">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              viewBox="0 0 24 24"
-            >
+
+      <div class="direct">
+        <a href="/">
+          <svg
+            fill="#262626"
+            height="24"
+            viewBox="0 0 48 48"
+            width="24"
+          >
+            <g>
+              <path d="M46.5 3.5h-45C.6 3.5.2 4.6.8 5.2l16 15.8 5.5 22.8c.2.9 1.4 1 1.8.3L47.4 5c.4-.7-.1-1.5-.9-1.5zm-40.1 3h33.5L19.1 18c-.4.2-.9.1-1.2-.2L6.4 6.5zm17.7 31.8l-4-16.6c-.1-.4.1-.9.5-1.1L41.5 9 24.1 38.3z" />
               <path
                 fill="none"
-                d="M0 0h24v24H0V0z"
+                d="M14.7 48.4l2.9-.7"
               />
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5.5-2.5l7.51-3.49L17.5 6.5 9.99 9.99 6.5 17.5zm5.5-6.6c.61 0 1.1.49 1.1 1.1s-.49 1.1-1.1 1.1-1.1-.49-1.1-1.1.49-1.1 1.1-1.1z" />
-            </svg>
-          </a>
-        </div>
-        <div class="notifications">
-          <button class="notification-button">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="none"
-                d="M0 0h24v24H0V0z"
-              />
-              <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z" />
-            </svg>
-          </button>
-        </div>
-        <div class="profile">
-          <a href="/">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="none"
-                d="M0 0h24v24H0V0z"
-              />
-              <path d="M12 6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m0 10c2.7 0 5.8 1.29 6 2H6c.23-.72 3.31-2 6-2m0-12C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 10c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-            </svg>
-          </a>
-        </div>
+            </g>
+          </svg>
+        </a>
       </div>
     </div>
   </div>
@@ -163,99 +79,17 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-  align-items: center;
-  border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
-  justify-content: center;
-  max-width: 100%;
-  padding: 25px 15%;
-
-  @media (max-width: 420px) {
-    padding: 25px 5%;
-  }
+  width: 100%;
 
   .header-items {
+    align-items: center;
+    border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
     display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-    width: 100%;
-
-    @media (max-width: 420px) {
-      justify-content: space-between;
-    }
-    
-    .search-bar {
-      min-width: 300px;
-
-      .form-group {
-        align-items: center;
-        border: solid 1px #DBDBDB;
-        border-radius: 5px;
-        display: flex;
-        position: relative;
-
-        svg {
-          opacity: 0.15;
-        }
-        
-        input {
-          background: none;
-          border: none;
-          height: 30px;
-          width: 100%;
-          outline: none;
-          width: 100%;
-        }
-
-        .search-icon {
-          align-items: center;
-          display: flex;
-          justify-content: center;
-          padding-right: 15px;
-          position: absolute;
-          width: 300px;
-
-          .placeholder {
-            color: #DBDBDB;
-          }
-
-          &.active {
-            left: 0;
-            position: relative;
-            width: initial;
-            padding-left: 15px;
-          }
-        }
-
-        .search-clear {
-          cursor: pointer;
-          display: none;
-          position: absolute;
-          right: 0;
-
-          &.active {
-            display: block;
-            background-color: white;
-            padding: 0 15px;
-          }
-        }
-      }
-
-      @media (max-width: 420px) {
-        display: none;
-      }
-    }
-
-    .group-icons {
-      display: flex;
-      justify-content: space-between;
-      width: 150px;
-
-      .notification-button {
-        background: none;
-        border: none;
-        cursor: pointer;
-      }
-    }
+    flex-direction: row;
+    height: 45px;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 0 5%;
   }
 }
 </style>

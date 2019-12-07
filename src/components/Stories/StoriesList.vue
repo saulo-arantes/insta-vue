@@ -67,7 +67,7 @@ export default {
 
 <style lang="scss" scoped>
 .story-list {
-  border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
+  border-bottom: 1px solid #e6e6e6;
   display: flex;
   justify-content: flex-start;
   margin-bottom: 10px;

@@ -1,5 +1,13 @@
+html, body, #vue-root {
+  height: 100%;
+}
+
 html {
   font-family: 'Roboto', sans-serif;
+}
+
+body {
+  overflow-y: scroll;
 }
 
 .d-none {
