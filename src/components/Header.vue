@@ -49,31 +49,7 @@
 
 <script>
 export default {
-  name: 'Header',
-
-  methods: {
-    toggleSearch() {
-      if (this.$refs.searchLabel.classList.contains('active')) {
-        return
-      }
-
-      this.$refs.searchLabel.classList.toggle('active')
-      this.$refs.searchClear.classList.toggle('active')
-      this.$refs.placeholder.classList.toggle('d-none')
-
-      this.$refs.searchInput.focus()
-    },
-
-    blurSearch() {
-      this.toggleSearch()
-
-      this.$refs.searchInput.blur()
-    },
-
-    clearSearch() {
-      this.$refs.searchInput.value = ''
-    }
-  }
+  name: 'Header'
 }
 </script>
 

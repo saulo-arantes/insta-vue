@@ -5,6 +5,9 @@
         <header>
           <instagram-header />
         </header>
+        <footer>
+          <instagram-footer />
+        </footer>
       </nav>
       <main>
         <section class="feed">
@@ -17,12 +20,14 @@
 
 <script>
 import InstagramHeader from './components/Header'
+import InstagramFooter from './components/Footer'
 import StoriesList from './components/Stories/StoriesList'
 
 export default {
   name: 'App',
   components: {
     InstagramHeader,
+    InstagramFooter,
     StoriesList
   }
 }
@@ -36,26 +41,26 @@ export default {
     flex-grow: 1;
 
     nav {
-      header {
+      header, footer {
         background: #FFFFFF;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         left: 0;
         position: fixed;
-        order: 0;
         right: 0;
-        top: 0;
         width: 100%;
         z-index: 1;
-        &::before {
-          background-color: rgba(var(--b6a,219,219,219),1);
-          bottom: -1;
-          content: '';
-          left: 0;
-          position: absolute;
-          right: 0;
-        }
+      }
+
+      header {
+        order: 0;
+        top: 0;
+      }
+
+      footer {
+        bottom: 0;
+        order: 5;
       }
     }
 
