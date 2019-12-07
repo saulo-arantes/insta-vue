@@ -7,6 +7,7 @@
       <story
         :username="story.username"
         :pic="story.pic"
+        :seen="story.seen"
       />
     </div>
   </div>
@@ -35,7 +36,8 @@ export default {
         },
         {
           username: 'saulo_arantes',
-          pic: 'https://instagram.fplu8-1.fna.fbcdn.net/vp/a1887e34947af89e32056e50d74c47fd/5E70F22B/t51.2885-19/s150x150/43913482_751756551832600_1722241345499693056_n.jpg?_nc_ht=instagram.fplu8-1.fna.fbcdn.net'
+          pic: 'https://instagram.fplu8-1.fna.fbcdn.net/vp/a1887e34947af89e32056e50d74c47fd/5E70F22B/t51.2885-19/s150x150/43913482_751756551832600_1722241345499693056_n.jpg?_nc_ht=instagram.fplu8-1.fna.fbcdn.net',
+          seen: true
         },
         {
           username: 'saulo_arantes',
@@ -51,7 +53,8 @@ export default {
         },
         {
           username: 'saulo_arantes',
-          pic: 'https://instagram.fplu8-1.fna.fbcdn.net/vp/a1887e34947af89e32056e50d74c47fd/5E70F22B/t51.2885-19/s150x150/43913482_751756551832600_1722241345499693056_n.jpg?_nc_ht=instagram.fplu8-1.fna.fbcdn.net'
+          pic: 'https://instagram.fplu8-1.fna.fbcdn.net/vp/a1887e34947af89e32056e50d74c47fd/5E70F22B/t51.2885-19/s150x150/43913482_751756551832600_1722241345499693056_n.jpg?_nc_ht=instagram.fplu8-1.fna.fbcdn.net',
+          seen: true
         },
         {
           username: 'saulo_arantes',
