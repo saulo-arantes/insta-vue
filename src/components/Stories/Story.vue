@@ -9,7 +9,8 @@
         alt=""
       >
     </div>
-    <span>{{ username.length > 10 ? `${username.substring(0, 10)}...` : username }}</span>
+    <span v-if="!authUser">{{ username.length > 10 ? `${username.substring(0, 10)}...` : username }}</span>
+    <span v-if="authUser">Your Story</span>
   </div>
 </template>
 
@@ -31,14 +32,19 @@ export default {
     username: {
       type: String,
       default: ''
-    }
+    },
+
+    authUser: {
+      type: Boolean,
+      default: false
+    },
   }
 }
 </script>
 
 <style lang="scss" scoped>
 .story {
-  padding: 5px;
+  padding: 5px 10px;
   text-align: center;
 
   .story-profile-pic {
@@ -86,6 +92,7 @@ export default {
   span {
     color: #000;
     font-size: 12px;
+    line-height: 14px;
   }
 } 
 </style>

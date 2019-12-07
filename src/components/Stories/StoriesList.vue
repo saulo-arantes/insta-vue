@@ -1,15 +1,13 @@
 <template>
   <div class="story-list">
-    <div
+    <story
       v-for="story in stories"
       :key="story"
-    >
-      <story
-        :username="story.username"
-        :pic="story.pic"
-        :seen="story.seen"
-      />
-    </div>
+      :username="story.username"
+      :pic="story.pic"
+      :seen="story.seen"
+      :auth-user="story.authUser"
+    />
   </div>
 </template>
 
@@ -28,7 +26,8 @@ export default {
       stories: [
         {
           username: 'saulo_arantes',
-          pic: 'https://instagram.fplu8-1.fna.fbcdn.net/vp/a1887e34947af89e32056e50d74c47fd/5E70F22B/t51.2885-19/s150x150/43913482_751756551832600_1722241345499693056_n.jpg?_nc_ht=instagram.fplu8-1.fna.fbcdn.net'
+          pic: 'https://instagram.fplu8-1.fna.fbcdn.net/vp/a1887e34947af89e32056e50d74c47fd/5E70F22B/t51.2885-19/s150x150/43913482_751756551832600_1722241345499693056_n.jpg?_nc_ht=instagram.fplu8-1.fna.fbcdn.net',
+          authUser: true
         },
         {
           username: 'saulo_arantes',
@@ -68,8 +67,10 @@ export default {
 
 <style lang="scss" scoped>
 .story-list {
+  border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
   display: flex;
   justify-content: flex-start;
+  margin-bottom: 10px;
   overflow-x: scroll;
   padding: 10px 10px;
 
