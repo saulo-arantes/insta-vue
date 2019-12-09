@@ -62,7 +62,8 @@ export default {
     display: flex;
     height: 56px;
     justify-content: center;
-    // margin-bottom: .3rem;
+    margin-bottom: .3rem;
+    padding: 1px;
     position: relative;
     width: 56px;
 

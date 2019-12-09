@@ -21,10 +21,7 @@
       >
     </div>
 
-    <div class="actions">
-      <div class="interactions"></div>
-      <div class="save"></div>
-    </div>
+    <actions />
 
     <div class="likes"></div>
 
@@ -38,10 +35,13 @@
 
 <script>
 import Story from './../Stories/Story'
+import Actions from './PostActions'
+
 export default {
   name: 'Post',
 
   components: {
+    Actions,
     Story
   },
 
@@ -77,7 +77,7 @@ export default {
   
   .images {
     height: auto;
-    max-height: 200px;
+    max-height: 100%;
     width: 100%;
 
     img {
