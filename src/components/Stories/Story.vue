@@ -9,7 +9,7 @@
         alt=""
       >
     </div>
-    <span v-if="!authUser">{{ username.length > 10 ? `${username.substring(0, 10)}...` : username }}</span>
+    <span v-if="!authUser">{{ limitString && username.length > 10 ? `${username.substring(0, 10)}...` : username }}</span>
     <span v-if="authUser">Your Story</span>
   </div>
 </template>
@@ -38,13 +38,18 @@ export default {
       type: Boolean,
       default: false
     },
+
+    limitString: {
+      type: Boolean,
+      default: true
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
 .story {
-  padding: 5px 10px;
+  padding: 5px;
   text-align: center;
 
   .story-profile-pic {
@@ -57,8 +62,7 @@ export default {
     display: flex;
     height: 56px;
     justify-content: center;
-    margin-bottom: .3rem;
-    padding: 1px;
+    // margin-bottom: .3rem;
     position: relative;
     width: 56px;
 
@@ -93,6 +97,22 @@ export default {
     color: #000;
     font-size: 12px;
     line-height: 14px;
+  }
+
+  &.d-flex {
+    display: flex;
+    align-items: center;
+
+    .story-profile-pic {
+      height: 32px;
+      width: 32px;
+
+    }
+
+    span {
+      font-size: 14px;
+      margin-left: 10px;
+    }
   }
 } 
 </style>

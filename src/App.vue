@@ -12,6 +12,7 @@
       <main>
         <section class="feed">
           <stories-list />
+          <feed />
         </section>
       </main>
     </section>
@@ -22,13 +23,15 @@
 import InstagramHeader from './components/Header'
 import InstagramFooter from './components/Footer'
 import StoriesList from './components/Stories/StoriesList'
+import Feed from './components/Feed/Feed'
 
 export default {
   name: 'App',
   components: {
     InstagramHeader,
     InstagramFooter,
-    StoriesList
+    StoriesList,
+    Feed
   }
 }
 </script>

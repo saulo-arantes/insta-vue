@@ -1,8 +1,8 @@
 <template>
   <div class="story-list">
     <story
-      v-for="story in stories"
-      :key="story"
+      v-for="(story, key) in stories"
+      :key="key"
       :username="story.username"
       :pic="story.pic"
       :seen="story.seen"
