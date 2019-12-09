@@ -9,8 +9,8 @@
           class="d-flex"
         />
       </div>
-      <button class="options">
-        ...
+      <button class="options-button">
+        <span class="options" />
       </button>
     </div>
 
@@ -63,15 +63,21 @@ export default {
     display: flex;
     justify-content: space-between;
     margin: 0 5px;
-    padding-right: 15px;
 
-    .options {
+    .options-button {
       align-content: center;
       background: none;
       border: none;
       cursor: pointer;
-      font-size: 20px;
-      font-weight: 700;
+      
+      .options {
+        width: 24px;
+        height: 24px;
+        display: block;
+        background-image: url('https://www.instagram.com/static/bundles/metro/sprite_glyphs_2x_f7d2be2d62e9.png/f7d2be2d62e9.png');
+        background-size: 411px 393px;
+        background-position: -175px -319px;
+      }
     }
   }
   
