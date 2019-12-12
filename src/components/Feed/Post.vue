@@ -35,8 +35,6 @@
       <strong>saulo_arantes</strong> Desenvolvendo a página inicial do Instagram em Vue JS
     </div>
 
-    <div class="comments"></div>
-
     <div class="date">
       3 minutes ago
     </div>
@@ -66,6 +64,7 @@ export default {
 
 <style lang="scss" scoped>
 .post {
+  margin-bottom: 20px;
   width: 100%;
 
   .head {
